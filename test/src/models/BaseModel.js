@@ -13,7 +13,7 @@ export default class BaseModel {
   }
 
   /**
-   * Create a new customer from API returned values
+   * Create a model from API returned values
    * @param {object} newValues
    * @param {array} errors
    * @returns {*}
