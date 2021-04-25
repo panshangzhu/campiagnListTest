@@ -1,0 +1,2 @@
+export const ADD_COUNT = "ADD_COUNT";
+export const SET_CAMPAIGN_LIST = "SET_CAMPAIGN_LIST";
