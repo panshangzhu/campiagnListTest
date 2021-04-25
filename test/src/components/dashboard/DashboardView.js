@@ -3,7 +3,7 @@ import React from "react";
 // Material-UI
 import { makeStyles, Grid, Typography, useTheme, useMediaQuery } from "@material-ui/core";
 
-// View
+// Utils
 import {
   getNameColor,
   getNameColorHover,
@@ -19,7 +19,7 @@ const useStyle = makeStyles((theme) => ({
   },
   firstLayer: {
     minHeight: 60,
-    paddingBottom: theme.spacing(1),
+    marginBottom: theme.spacing(1),
     [theme.breakpoints.up('md')]: {
       height: "25%",
     }
@@ -29,7 +29,7 @@ const useStyle = makeStyles((theme) => ({
   },
   secondLayer: {
     [theme.breakpoints.up('md')]: {
-      height: "75%",
+      height: `calc(75% - ${theme.spacing(1)}px)`,
     }
   },
   layerNumber: {
@@ -46,8 +46,7 @@ const useStyle = makeStyles((theme) => ({
     backgroundColor: getNameColor(dashboardName, theme),
     maxHeight: 250,
     minHeight: 90,
-    height: `calc(40% - ${theme.spacing(1)}px)`,
-    marginTop: theme.spacing(1),
+    height: `calc(40% - ${theme.spacing(2)}px)`,
   }),
   rightSingleContainer: {
     height: "60%",
