@@ -37,14 +37,15 @@ const useStyle = makeStyles((theme) => ({
   },
   secondLayerNumber: ({ dashboardName }) => ({
     fontWeight: theme.typography.fontWeightBold,
-    color: getNameColor(dashboardName, theme),
+    color: getNameColorHover(dashboardName, theme),
   }),
   leftUsersContainer: {
     minHeight: 150,
   },
   rightInfomationContainer: ({ dashboardName }) => ({
-    backgroundColor: getNameColorHover(dashboardName, theme),
+    backgroundColor: getNameColor(dashboardName, theme),
     maxHeight: 250,
+    minHeight: 90,
     height: `calc(40% - ${theme.spacing(1)}px)`,
     marginTop: theme.spacing(1),
   }),
