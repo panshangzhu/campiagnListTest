@@ -3,6 +3,7 @@ import get from "lodash/get"
 
 // get current location
 const extractRouterData = (state) => state.router;
+// cache state
 const fetchRouterData = createCachedSelector(
     extractRouterData,
     (state, key) => key,

@@ -2,6 +2,7 @@ import createCachedSelector from "re-reselect"
 import get from "lodash/get"
 
 const extractDashboard = (state) => state.dashboardReducer;
+// cache state
 const fetchDashboardData = createCachedSelector(
     extractDashboard,
     (state, key) => key,

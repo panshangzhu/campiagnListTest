@@ -2,6 +2,7 @@ import createCachedSelector from "re-reselect"
 import get from "lodash/get"
 
 const extractCampaignList = (state) => state.campaignListReducer;
+//cache state
 const fetchCampaignListData = createCachedSelector(
     extractCampaignList,
     (state, key) => key,
